@@ -1,0 +1,256 @@
+@charset "UTF-8";
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+body { background-color: black; width: 100%; height: 3500px;
+	z-index: -3;}
+main { height: 3600px; margin: 0 auto; }
+header { width: 100%; float: left;}
+
+#photoduheader { position: absolute; top: 0; left: 50%;
+	transform: translate(-50%, 0%); z-index: -1; 
+	opacity: 0.9; filter: brightness(40%); }
+
+nav { width: auto; display: flex; justify-content: space-between;
+	align-items: center;}
+nav #commentaire { height: 50px; width: 50px; float: left; }
+nav #logomaloutexte { float: left; }
+nav #logo { float: left; }
+nav #menuburger { float: left; height: 32px; width: 38px; 
+	padding: 0 0 2% 0; }
+
+#menurs { height: 85px; width: 500px; background-color: #e5e5e5; 
+	float: left;}
+#fleche { float: left; height: 35px; width: 80px; margin: 5% 5%; }
+#navrs { float: right; height: 35px; width: 170px; margin: 5% 5%; 
+	display: flex; justify-content: space-between; align-items: center; }
+.carres { height: 35px; width: 35px;  }
+
+section { width: 100%; background-color: #f9f9f9; float: left;}
+
+#illustrationarticle { width: 100%; height: 350px; }
+#illustrationarticle img { max-width: 100%; height: auto; }
+
+#suitearticle { width: 100%; height: 1170px; 
+	background-color: white; padding-top: 3%;
+	position: relative; top: 10px; left: 0;  }
+#soustitre { width: 70%; height: 25px; padding: 0.7% 0 0 0;
+	background-color: #f0c448; margin: 5% 0 0 0;}
+
+#vousaimerezaussi { width: 100%; height: 650px; 
+	background-color: white; }
+
+.separation { width: 60%; height: auto; margin: 0 auto;
+	padding: 0; }
+.separation img { width: 100%; height: 100%; margin: 0;
+	padding: 0; }
+
+ul { width: 87%; height: 400px; padding: 0px;
+	margin: 0 auto; background-color: white; 
+	display: flex; justify-content: space-between; }
+li { width: 33.3%; height: 400px; display: inline-block;
+	float: left; margin: 1% 0;}
+article {  width: 100% ; height: 400px; display: inline-block;
+	float: left; background-color: white; 
+	box-sizing: border-box;
+	/* box-sizing: content-box; */ }
+.photoarticlesproposes { width: 70% ; height: 125px; margin: 5% 15%; 
+	background-size: 125%; background-position: center;
+	background-image: url(../images/article1.jpg);
+	background-repeat: no-repeat;}
+
+#auteur { width: 100%; height: 250px; 
+	background-color: white; }
+.photoauteur { background-size: cover; background-position: center;
+	background-image: url(../images/photoauteur.jpg); float: left; 
+	background-repeat: no-repeat; border: 5px solid #f0c448; }
+
+.zonecommentaires { width: 100%; margin: 0; padding: 0;
+	background-color: white; }
+.trait { margin: 1% auto; height: 1px; width: 90%; color: #a3a3a3; }
+
+footer { width: 100%; float: left; }
+#imagefondfooter { width: 100%; z-index: -2;
+	background-image: url(../images/jason-leung-537357-unsplash.jpg);
+	background-position: center; background-repeat: no-repeat; 
+	filter: blur(6px) grayscale(50%) opacity(50%);}
+#navrsfooter { height: 70px; display: flex; 
+	justify-content: space-between; align-items: center; }
+.carresfooter { height: 40px; width: 40px; margin: 0 4% }
+
+@font-face { 
+	font-family: 'Roboto-Regular', sans-serif;
+	src: url ('../font/Roboto/Roboto-Regular.eot');
+	src: url ('../font/Roboto/Roboto-Regular.woff') format('woff');
+	url('../font/Roboto/Roboto-Regular.svg#abcd') format('svg');
+	url('../font/Roboto/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face { 
+	font-family: 'BebasNeue-Regular', sans-serif;
+	src: url ('../font/Roboto/BebasNeue-Regular.eot');
+	src: url ('../font/Roboto/BebasNeue-Regular.woff') format('woff');
+	url('../font/Roboto/BebasNeue-Regular.svg#abcd') format('svg');
+	url('../font/Roboto/BebasNeue-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#textmalou { float: left; display: block; margin: 2% 1%; 
+	color: white; text-decoration: none; 
+	font-family: 'BebasNeue-Regular', sans-serif; }
+
+section h1 { font-family: 'BebasNeue-Regular', sans-serif;
+	font-weight: 300px; }
+section h2 { font-size: 17.5px; 
+	font-family: 'Roboto-Regular', sans-serif;
+	margin: 0 0 0 5%; color: white;  padding: 0;}
+section h3 { font-size: 15px; 
+	font-family: 'Roboto-Regular', sans-serif;
+	margin: 5% 5% 0 5%; color: #333333; font-weight: 300;}
+section p { font-size: 15px; 
+	font-family: 'Roboto-Regular', sans-serif;
+	margin: 5%; color: #333333; text-align: justify; }
+
+#suitearticle p { font-weight: 200;}
+
+#vousaimerezaussi h2 { font-family: 'BebasNeue-Regular', sans-serif; 
+	font-weight: 300px; font-size: 45px; margin: 8.5% 15%; 
+	text-align: center;  color: #333333; }
+#vousaimerezaussi h3 { font-family: 'Roboto-Regular', sans-serif;
+	font-weight: 500px; font-size: 8px; margin: 5% 15%; 
+	text-align: justify; color: #333333; }
+#vousaimerezaussi p { font-family: 'Roboto-Regular', sans-serif;
+	font-weight: 500px; font-size: 8px; margin: 5% 15%; 
+	text-align: justify;  color: #333333; }
+.boutonlecture { width: 100%; margin: 5% 15%; display: inline-block;
+	width: 70%; height: 30px; font-size: 12px; color: white;
+	padding: 4.3%; font-family: 'Roboto-Regular', sans-serif;
+	background-color: #f0c448; text-decoration: none; 
+	 text-align: center; }
+
+.prenomauteur { display: inline-block;
+	height: 39px; float: left; text-decoration: none; 
+	font-family: 'BebasNeue-Regular', sans-serif;
+	font-weight: 500px; font-size: 30px; color: #f0c448; }
+.nomauteur { display: inline-block; height: 39px; width : 60%; 
+	float: left; text-decoration: none; 
+	font-family: 'BebasNeue-Regular', sans-serif;
+	font-weight: 500px; font-size: 30px; color: #333333; }
+#auteur p { font-family: 'Roboto-Regular', sans-serif;
+	font-weight: 500px; font-size: 12px; color: #a3a3a3; 
+	display: inline-block; float: left;}
+.mailauteur { font-family: 'Roboto-Regular', sans-serif;
+	font-weight: 500px; font-size: 12px; margin: 0 0 0 3%; 
+	color: #333333; display: inline-block; float: left;
+	text-decoration: none; }
+
+.nompseudo { font-family: 'Roboto-Regular', sans-serif;
+	font-weight: 500px; color: #333333; display: inline-block; 
+	float: left; }
+.datepost { font-family: 'Roboto-Regular', sans-serif;
+	font-weight: 500px; color: #a3a3a3; display: inline-block; 
+	float: left; }
+.com { display: inline-block; float: left; color: #333333;
+	font-family: 'Roboto-Regular', sans-serif; text-align: justify; }
+.saisienompseudo { display: inline-block; color: #a3a3a3;
+	font-family: 'Roboto-Regular', sans-serif;
+	text-align: left; border: 1px solid #a3a3a3; }
+.saisiecommentaire { display: inline-block; color: #a3a3a3;
+	font-family: 'Roboto-Regular', sans-serif;
+	text-align: left; border: 1px solid #a3a3a3; }
+
+.boutoncontact { display: inline-block;  color: white;
+	font-family: 'Roboto-Regular', sans-serif;text-align: center; 
+	text-decoration: none; border: 4px solid white;  }
+.textfooter { font-size: 17px; font-family: 'Roboto-Regular', sans-serif;
+	margin: 5% auto; color: white; text-align: center; width: 60%; }
+
+/* mobile */
+@media (max-width: 799px) {
+	main { width: 500px; }
+	header {height: 330px; }
+	#photoduheader {width: 500px; height: 330px; }
+	nav { height: 100px; padding: 30px 30px 0 30px; }
+	nav #commentaire { height: 42px; width: 42px; }
+	nav #logomaloutexte { width: 70px; }
+	nav #logo {height: 45px; width: 45px; margin: 0 15%; }
+	#textmalou { height: 45px; width: 70px; font-size: 32px; }
+	section {height: 2445px; }
+	section h1 { color: #333333; display: block; font-size: 25px; 
+		padding: 5% 5% 0 5%; }
+	#illustrationarticle { position: static; float: left; 
+		display: none;}
+	#suitearticle { height: 1110px; padding: 0;}
+	#soustitre { width: auto; padding: 0.7% 0; margin: 0 5%;
+		background-color: #f0c448; }
+	section h2 {margin: 0;}
+	#vousaimerezaussi { display: none;}
+	#auteur { height: 200px; }
+	.photoauteur { width: 18% ; height: 90px; margin: 9% 0% 5% 5%; }
+	.prenomauteur { margin: 10.5% 0.2% 0 3%; }
+	.nomauteur { margin: 10.5% 0.2% 1% 1%; }
+	#auteur p { margin: 0 0 2.5% 3%; }
+	.zonecommentaires { height: 700px; }
+	.nompseudo { font-size: 15px; margin: 5% 1% 5% 5%; }
+	.datepost { font-size: 15px; margin: 5% 5% 5% 1%; }
+	.com { font-size: 15px; margin: 0 5% 5% 5%; }
+	.saisienompseudo { margin: 0.1% 5% 0.1% 5%; padding: 2%;
+		width: 90%; height: 30px; font-size: 12px; }
+	.saisiecommentaire { margin: 1% 5% 0.1% 5%; font-size: 12px; 
+		padding: 19% 0 0.5% 2%; width: 90%; height: 120px; }
+	footer { height: 560px; }
+	#imagefondfooter { height: 560px; background-size: 185% 100%; }
+	.boutoncontact { width: 65%; height: 70px; font-size: 24px;
+		padding: 3.2%; margin: 10% 17.5%;
+		position: relative; top: -560px; left: 0; z-index: 1; }
+	#navrsfooter { position: relative; top: -560px; left: 0; z-index: 1; 
+		width: 60%; margin: 0 20% 5% 20%; padding: 2.4% 10%; }
+	.textfooter { position: relative; 
+		top: -520px; left: 0; z-index: 1;  }
+}
+
+/* PC */
+@media (min-width: 800px){
+	main { width: 800px; }
+	header {height: 500px; }
+	#photoduheader { width: 800px; height: 550px; }
+	nav { height: 150px; padding: 30px 50px 0 50px; }
+	nav #commentaire { display: none; }
+	nav #logomaloutexte { width: 200px; }
+	nav #logo {height: 50px; width: 50px; }
+	#textmalou { height: 50px; width: 70px; padding: 3% 5%;
+		font-size: 26px;}
+	#menurs { display: none;}
+	section {height: 3560px; }
+	section h1 { color: white; display: block;  font-weight: 100;
+		position: absolute; top: 130px; left: 50%; 
+		transform: translate(-50%, 0%); z-index: +1; font-size: 35px;
+		border-bottom: 5px solid #f0c448; text-align: center; 
+		padding: 9.6% 0 0.6% 0; max-width: 500px; }
+	section h2 { margin: 0 0 0 21.5%; }
+	section h3 { margin: 5% 15%; }
+	section p { margin: 8% 15%; }
+	#suitearticle p { margin: 5% 15%; }
+	.photoauteur { width: 15% ; height: 120px; margin: 8.5% 0% 4% 12%; }
+	.prenomauteur { margin: 10% 0 0 3%; }
+	.nomauteur { margin: 10% 0.2% 0 0; }
+	#auteur p { margin: 0 0 2.5% 3%; }
+	.zonecommentaires { height: 780px; }
+	.nompseudo { font-size: 15px; margin: 5% 1% 5% 12.5%; }
+	.datepost { font-size: 15px; margin: 5% 5% 5% 1%; }
+	.com { font-size: 14px; margin: 0 12.5% 5% 12.5%; }
+	.saisienompseudo { margin: 0.1% 12.5% 0.1% 12.5%; padding: 1%;
+		width: 76%; height: 30px; font-size: 12px; }
+	.saisiecommentaire { margin: 1% 12.5% 0.1% 12.5%; font-size: 12px; 
+		padding: 12% 0 0.5% 2%; width: 76%; height: 120px; }
+	footer { height: 470px; }
+	#imagefondfooter { height: 470px; background-size: cover;}
+	.boutoncontact { width: 30%; height: 48px; font-size: 16px;
+		padding: 1%; margin: 6% 35%;
+		position: relative; top: -470px; left: 0; z-index: 1; }
+	#navrsfooter { position: relative; top: -475px; left: 0; z-index: 1; 
+		width: 40%; margin: 0 30% 5% 30%; padding: 2.4% 7%; }
+	.textfooter { position: relative; top: -470px; left: 0; z-index: 1;  }
+}
